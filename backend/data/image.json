@@ -1,0 +1,22 @@
+[
+    {
+        "id": 2,
+        "filePath": "http://localhost:3000/uploaded-images/1763389618574-940411677.png",
+        "fileName": "1763389618574-940411677.png",
+        "fileTitle": "Screenshot 2025-07-14 145451.png",
+        "fileType": "image/png",
+        "fileSize": 97600,
+        "fileCreatedAt": "2025-11-17T14:26:58.586Z",
+        "fileUpdatedAt": "2025-11-17T14:26:58.586Z"
+    },
+    {
+        "id": 3,
+        "filePath": "http://localhost:3000/uploaded-images/1763391463544-351563053.png",
+        "fileName": "1763391463544-351563053.png",
+        "fileTitle": "Screenshot 2025-07-13 220656.png",
+        "fileType": "image/png",
+        "fileSize": 215110,
+        "fileCreatedAt": "2025-11-17T14:57:43.553Z",
+        "fileUpdatedAt": "2025-11-17T14:57:43.554Z"
+    }
+]
