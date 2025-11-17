@@ -52,4 +52,3 @@ function ImageCard({ image, isSelected, onToggleSelect, className }) {
 }
 
 export { ImageCard };
-
