@@ -67,7 +67,14 @@ backend/
    npm install
    ```
 
-3. **Start the development server:**
+3. **Create environment file:**
+   Create a `.env` file in the backend root directory:
+   ```env
+   PORT=3000
+   BASE_URL=http://localhost:3000
+   ```
+
+4. **Start the development server:**
    ```bash
    npm run dev
    ```
@@ -78,6 +85,31 @@ backend/
 
 - `npm run dev` - Start the development server with nodemon (auto-restart)
 - `npm start` - Start the production server
+
+### Environment Variables
+
+Create a `.env` file in the backend root directory:
+
+| Variable | Description | Default | Required |
+|----------|-------------|---------|----------|
+| `PORT` | Server port number | `3000` | No |
+| `BASE_URL` | Base URL for image paths | Auto-detected | Yes (for production) |
+
+**Example `.env` file:**
+
+**Development:**
+```env
+PORT=3000
+BASE_URL=http://localhost:3000
+```
+
+**Production:**
+```env
+PORT=3000
+BASE_URL=https://your-backend-domain.com
+```
+
+**Important:** The `BASE_URL` should be set to your deployed backend URL in production to ensure image URLs are correctly generated.
 
 ## 📚 API Documentation
 

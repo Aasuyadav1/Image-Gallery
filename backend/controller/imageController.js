@@ -19,7 +19,7 @@ export const uploadImage = (req, res) => {
             images = JSON.parse(data);
         }
 
-        const baseUrl = `${req.protocol}://${req.get('host')}`;
+        const baseUrl = process.env.BASE_URL || `${req.protocol}://${req.get('host')}`;
         
         const newImage = {
             id: images.length > 0 ? Math.max(...images.map(img => img.id)) + 1 : 1,
@@ -61,7 +61,7 @@ export const getAllImages = (req, res) => {
         }
 
         // Add base URL if filePath doesn't already contain it (for backward compatibility)
-        const baseUrl = `${req.protocol}://${req.get('host')}`;
+        const baseUrl = process.env.BASE_URL || `${req.protocol}://${req.get('host')}`;
         const imagesWithFullPath = images.map(img => {
             if (!img.filePath.startsWith('http')) {
                 return {
